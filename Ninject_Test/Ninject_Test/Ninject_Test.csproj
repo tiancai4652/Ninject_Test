@@ -77,8 +77,10 @@
     <Compile Include="Offiial\DIByHand\DIByHand_Step3.cs" />
     <Compile Include="Offiial\DIByNinject\DIByNinject.cs" />
     <Compile Include="Offiial\InjectionPartterns\InjectionPartterns.cs" />
+    <Compile Include="Offiial\Module\Module.cs" />
     <Compile Include="Offiial\MultiInjection\MultiInjection.cs" />
     <Compile Include="Offiial\Object Scopes\ObjectScopes.cs" />
+    <Compile Include="Offiial\Providers\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
