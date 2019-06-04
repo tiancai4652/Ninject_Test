@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xunit;
 
 namespace Ninject_Test.Offiial.DIByNinject
 {
@@ -15,17 +16,20 @@ namespace Ninject_Test.Offiial.DIByNinject
 
 
 
-    class DIByNinject
+    public class DIByNinject
     {
+        [Fact]
         public void Run()
         {
             IKernel kernel = new StandardKernel();
-            //此时就可以构建一个Samurai的实例
-            //等等，Samurai的构造函数有个IWeapon，但是IWeapon是个接口，接口不能实例化，那么Niniject是如何知道他要实现哪种类型呢
-            var samurai = kernel.Get<Samurai>();
             //要通过Type Binding来确定接口要实现哪种类型.
-            Bind<IWeapon>().To<Sword>();
+            kernel.Bind<IWeapon>().To<Sword>();
+            //此时就可以构建一个Samurai的实例
+            var samurai = kernel.Get<Samurai>();
+            samurai.Attack("You");
         }
+
+
     }
 
 
@@ -58,5 +62,7 @@ namespace Ninject_Test.Offiial.DIByNinject
     {
         void Hit(string target);
     }
+
+    
 
 }

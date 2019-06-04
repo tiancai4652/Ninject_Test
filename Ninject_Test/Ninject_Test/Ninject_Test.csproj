@@ -69,6 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Offiial\Contextual Binding\Contextual Binding.cs" />
+    <Compile Include="Offiial\Contextual Binding\Contextual Binding2.cs" />
+    <Compile Include="Offiial\Contextual Binding\Contextual Binding3.cs" />
     <Compile Include="Offiial\DIByHand\DIByHand_Step1.cs" />
     <Compile Include="Offiial\DIByHand\DIByHand_Step2.cs" />
     <Compile Include="Offiial\DIByHand\DIByHand_Step3.cs" />
@@ -90,7 +93,9 @@
   <ItemGroup>
     <Analyzer Include="..\packages\xunit.analyzers.0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="MyTest\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

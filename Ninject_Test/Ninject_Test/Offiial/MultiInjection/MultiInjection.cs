@@ -8,12 +8,15 @@ using System.Threading.Tasks;
 namespace Ninject_Test.Offiial.MultiInjection
 {
     //https://github.com/ninject/Ninject/wiki/Multi-injection
-
+    /// <summary>
+    /// 可以注入一个List<Interface> 实例集（）{implement1，implement2，implement3}
+    /// </summary>
     class MultiInjection
     {
         public static void Main()
         {
             Ninject.IKernel kernel = new StandardKernel(new TestModule());
+ 
 
             //Way1
             var samurai = kernel.Get<Samurai>();
@@ -24,8 +27,10 @@ namespace Ninject_Test.Offiial.MultiInjection
             //GetAll的结构只有你去迭代他才会被构建,每个计算都会合成一系列的对象.
             IEnumerable<IWeapon> weapons = kernel.GetAll<IWeapon>();
             foreach (var weapon in weapons)
-                Console.WriteLine(weapon.Hit("the evildoers"));
-        }
+                Console.WriteLine(weapon.Hit("the evildoers"));
+
+        }
+
     }
 
     /// <summary>

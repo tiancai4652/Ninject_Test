@@ -8,6 +8,14 @@ using Xunit;
 
 namespace Ninject_Test.Offiial.Object_Scopes
 {
+
+    //生命周期  此方案只适用于从StandardKernel.Bind的实例而不是从NinjectModule，下一个章节介绍有关NinjectModule
+    //InTransientScope  默认类型，每次都会重新创建一个实例去绑定
+    //Singleton  单例
+    //Thread
+    //Request
+    //Custom 自定义
+
     public class ScopeObject { }
 
     public static class ProcessingScope

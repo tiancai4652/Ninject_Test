@@ -9,7 +9,8 @@ namespace Ninject_Test.Offiial.InjectionPartterns
     //https://github.com/ninject/Ninject/wiki/Injection-Patterns
     //介绍Inject的三种模式
     //构造函数注入，属性注入，字段注入（舍弃）
-    //只推荐构造函数注入
+
+    //**只推荐构造函数注入**
 
     class InjectionPartterns
     {
