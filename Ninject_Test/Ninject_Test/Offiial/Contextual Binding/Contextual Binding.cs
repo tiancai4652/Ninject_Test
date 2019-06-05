@@ -44,33 +44,33 @@ namespace Ninject_Test.Offiial.Contextual_Binding
     }
 
 
-    //武器接口
-    public interface IWeapon
-    {
-        void Hit(string target);
-    }
+    ////武器接口
+    //public interface IWeapon
+    //{
+    //    void Hit(string target);
+    //}
 
-    /// <summary>
-    /// 武器(去武装我们的战士)
-    /// </summary>
-    public class Sword : IWeapon
-    {
-        public void Hit(string target)
-        {
-            Console.WriteLine($"Chopped {target} clean in half.");
-        }
-    }
+    ///// <summary>
+    ///// 武器(去武装我们的战士)
+    ///// </summary>
+    //public class Sword : IWeapon
+    //{
+    //    public void Hit(string target)
+    //    {
+    //        Console.WriteLine($"Chopped {target} clean in half.");
+    //    }
+    //}
 
-    /// <summary>
-    /// 寒风魔法书
-    /// </summary>
-    class WindMagicBook : IWeapon
-    {
-        public void Hit(string target)
-        {
-            Console.WriteLine($"Call Strong wind to blow {target}");
-        }
-    }
+    ///// <summary>
+    ///// 寒风魔法书
+    ///// </summary>
+    //class WindMagicBook : IWeapon
+    //{
+    //    public void Hit(string target)
+    //    {
+    //        Console.WriteLine($"Call Strong wind to blow {target}");
+    //    }
+    //}
 
 
 

@@ -26,8 +26,8 @@ namespace Ninject_Test.Offiial.MultiInjection
             //请注意：如果你移除了上面Foreach，这个对象是不会构造出来的，
             //GetAll的结构只有你去迭代他才会被构建,每个计算都会合成一系列的对象.
             IEnumerable<IWeapon> weapons = kernel.GetAll<IWeapon>();
-            foreach (var weapon in weapons)
-                Console.WriteLine(weapon.Hit("the evildoers"));
+            //foreach (var weapon in weapons)
+                //Console.WriteLine(weapon.Hit("the evildoers"));
 
         }
 
@@ -59,23 +59,8 @@ namespace Ninject_Test.Offiial.MultiInjection
 
         public void Attack(string target)
         {
-            foreach (IWeapon weapon in this.allWeapons)
-                Console.WriteLine(weapon.Hit(target));
-        }
-    }
-
-
-
-    public interface IWeapon
-    {
-        string Hit(string target);
-    }
-
-    public class Sword : IWeapon
-    {
-        public string Hit(string target)
-        {
-            return "Slice " + target + " in half";
+            //foreach (IWeapon weapon in this.allWeapons)
+                //Console.WriteLine(weapon.Hit(target));
         }
     }
 
@@ -84,6 +69,11 @@ namespace Ninject_Test.Offiial.MultiInjection
         public string Hit(string target)
         {
             return "Stab " + target + " to death";
+        }
+
+        void IWeapon.Hit(string target)
+        {
+            throw new NotImplementedException();
         }
     }
 }

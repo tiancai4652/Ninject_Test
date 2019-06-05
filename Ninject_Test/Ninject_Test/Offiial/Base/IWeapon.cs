@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ninject_Test.Offiial.Providers
+namespace Ninject_Test.Offiial
 {
-    class Class1
+    //武器接口
+    public interface IWeapon
     {
+        void Hit(string target);
+        
     }
 }

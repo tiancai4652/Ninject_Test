@@ -69,6 +69,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Offiial\Base\IWeapon.cs" />
+    <Compile Include="Offiial\Base\Samurai.cs" />
+    <Compile Include="Offiial\Base\Strike.cs" />
+    <Compile Include="Offiial\Base\Sword.cs" />
+    <Compile Include="Offiial\Base\WindMagicBook.cs" />
     <Compile Include="Offiial\Contextual Binding\Contextual Binding.cs" />
     <Compile Include="Offiial\Contextual Binding\Contextual Binding2.cs" />
     <Compile Include="Offiial\Contextual Binding\Contextual Binding3.cs" />
@@ -80,7 +85,8 @@
     <Compile Include="Offiial\Module\Module.cs" />
     <Compile Include="Offiial\MultiInjection\MultiInjection.cs" />
     <Compile Include="Offiial\Object Scopes\ObjectScopes.cs" />
-    <Compile Include="Offiial\Providers\Class1.cs" />
+    <Compile Include="Offiial\Providers\ToMethod.cs" />
+    <Compile Include="Offiial\Providers\ToProviders.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

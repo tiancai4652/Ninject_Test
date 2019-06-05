@@ -28,41 +28,5 @@ namespace Ninject_Test.Offiial.DIByNinject
             var samurai = kernel.Get<Samurai>();
             samurai.Attack("You");
         }
-
-
     }
-
-
-    class Samurai
-    {
-        readonly IWeapon weapon;
-        public Samurai(IWeapon weapon)
-        {
-            this.weapon = weapon;
-        }
-        public void Attack(string target)
-        {
-            this.weapon.Hit(target);
-        }
-    }
-    /// <summary>
-    /// 武器(去武装我们的战士)
-    /// </summary>
-    class Sword:IWeapon
-    {
-        public void Hit(string target)
-        {
-            Console.WriteLine($"Chopped {target} clean in half.");
-        }
-    }
-
-
-    //武器接口
-    public interface IWeapon
-    {
-        void Hit(string target);
-    }
-
-    
-
 }

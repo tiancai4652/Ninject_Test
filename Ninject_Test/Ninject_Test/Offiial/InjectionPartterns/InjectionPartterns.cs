@@ -23,22 +23,22 @@ namespace Ninject_Test.Offiial.InjectionPartterns
 	/// • 如果没有构造函数定义，Ninject会选择一个假想的带有默认参数的构造函数
 
     /// </summary>
-    class Samurai
-    {
-        readonly IWeapon weapon;
+    //class Samurai
+    //{
+    //    readonly IWeapon weapon;
 
-        public Samurai(IWeapon weapon)
-        {
-            if (weapon == null)
-                throw new ArgumentNullException("weapon");
-            this.weapon = weapon;
-        }
+    //    public Samurai(IWeapon weapon)
+    //    {
+    //        if (weapon == null)
+    //            throw new ArgumentNullException("weapon");
+    //        this.weapon = weapon;
+    //    }
 
-        public void Attack(string target)
-        {
-            this.weapon.Hit(target);
-        }
-    }
+    //    public void Attack(string target)
+    //    {
+    //        this.weapon.Hit(target);
+    //    }
+    //}
 
     //属性注入1
     //class Samurai
@@ -69,9 +69,9 @@ namespace Ninject_Test.Offiial.InjectionPartterns
     //    }
     //}
 
-    //武器接口
-    public interface IWeapon
-    {
-        void Hit(string target);
-    }
+    ////武器接口
+    //public interface IWeapon
+    //{
+    //    void Hit(string target);
+    //}
 }
