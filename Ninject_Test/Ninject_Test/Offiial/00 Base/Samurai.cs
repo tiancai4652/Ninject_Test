@@ -9,7 +9,7 @@ namespace Ninject_Test.Offiial
     /// <summary>
     /// 战士
     /// </summary>
-    class Samurai
+    public class Samurai
     {
         readonly IWeapon weapon;
         public Samurai(IWeapon weapon)

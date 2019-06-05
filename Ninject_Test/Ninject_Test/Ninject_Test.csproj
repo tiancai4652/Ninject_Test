@@ -69,24 +69,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Offiial\Base\IWeapon.cs" />
-    <Compile Include="Offiial\Base\Samurai.cs" />
-    <Compile Include="Offiial\Base\Strike.cs" />
-    <Compile Include="Offiial\Base\Sword.cs" />
-    <Compile Include="Offiial\Base\WindMagicBook.cs" />
+    <Compile Include="Offiial\11 Activation_Process\Class1.cs" />
+    <Compile Include="Offiial\00 Base\IWeapon.cs" />
+    <Compile Include="Offiial\00 Base\Samurai.cs" />
+    <Compile Include="Offiial\00 Base\Strike.cs" />
+    <Compile Include="Offiial\00 Base\Sword.cs" />
+    <Compile Include="Offiial\00 Base\WindMagicBook.cs" />
+    <Compile Include="Offiial\12 How to Work\Class1.cs" />
+    <Compile Include="Offiial\13 Contextual binding\ChooseStrongTypeByName.cs" />
+    <Compile Include="Offiial\13 Contextual binding\ImplimentMultiTypes.cs" />
     <Compile Include="Offiial\Contextual Binding\Contextual Binding.cs" />
     <Compile Include="Offiial\Contextual Binding\Contextual Binding2.cs" />
     <Compile Include="Offiial\Contextual Binding\Contextual Binding3.cs" />
-    <Compile Include="Offiial\DIByHand\DIByHand_Step1.cs" />
-    <Compile Include="Offiial\DIByHand\DIByHand_Step2.cs" />
-    <Compile Include="Offiial\DIByHand\DIByHand_Step3.cs" />
-    <Compile Include="Offiial\DIByNinject\DIByNinject.cs" />
-    <Compile Include="Offiial\InjectionPartterns\InjectionPartterns.cs" />
-    <Compile Include="Offiial\Module\Module.cs" />
-    <Compile Include="Offiial\MultiInjection\MultiInjection.cs" />
-    <Compile Include="Offiial\Object Scopes\ObjectScopes.cs" />
-    <Compile Include="Offiial\Providers\ToMethod.cs" />
-    <Compile Include="Offiial\Providers\ToProviders.cs" />
+    <Compile Include="Offiial\04 DIByHand\DIByHand_Step1.cs" />
+    <Compile Include="Offiial\04 DIByHand\DIByHand_Step2.cs" />
+    <Compile Include="Offiial\04 DIByHand\DIByHand_Step3.cs" />
+    <Compile Include="Offiial\05 DIByNinject\DIByNinject.cs" />
+    <Compile Include="Offiial\06 InjectionPartterns\InjectionPartterns.cs" />
+    <Compile Include="Offiial\09 Module\Module.cs" />
+    <Compile Include="Offiial\07 MultiInjection\MultiInjection.cs" />
+    <Compile Include="Offiial\08 Object Scopes\ObjectScopes.cs" />
+    <Compile Include="Offiial\10 Providers\ToMethod.cs" />
+    <Compile Include="Offiial\10 Providers\ToProviders.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
